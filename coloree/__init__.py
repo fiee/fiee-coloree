@@ -1,4 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from django.utils.translation import ugettext_lazy as _
 from validators import is_cmyk_color_code
+
+verbose_name = _(u'fiëé colorée')
+verbose_name_plural = _(u'fiëé colorée')
 
 def HtmlColorCode_to_strings(value):
     "Convert a HTML color code like '#FFCC00' or 'FFCC00' to a list of strings ['FF', 'CC', '00']"
