@@ -26,7 +26,7 @@ Known Issues
 License
 -------
 
-BSD, like Django_ itself (as far as valid for the code of other authors)
+BSD, like Django_ itself (as far as valid for the code of other authors), see LICENSE_
 
 
 Author(s)
@@ -36,7 +36,7 @@ Author(s)
 * `Ian Ward`_ (`tools.assert_on_exception`)
 * authors of several snippets, esp. fneumann_, laktek_ 
 
-
+.. _LICENSE: ./fiee-dorsale/raw/master/LICENSE
 .. _Django: http://djangoproject.com
 .. _YUI grids css: http://developer.yahoo.com/yui/grids/
 .. _jQuery: http://docs.jquery.com/
