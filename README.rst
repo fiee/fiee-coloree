@@ -11,7 +11,7 @@ What and how
 Dependencies
 ------------
 
-* Django 1.2 (may work with 1.1.) with included contributions
+* Django 1.6 with included contributions
 * widgets use jQuery_ and jquery.colorPicker
 
 

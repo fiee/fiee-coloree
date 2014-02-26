@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 from setuptools import setup, find_packages
-import os
 
 setup(name='fiee-coloree',
-      version='0.1.0',
+      version='0.1.1',
       description=u'',
       keywords='color picker widget RGB CMYK conversion',
       author='Henning Hraban Ramm',
@@ -30,6 +29,6 @@ setup(name='fiee-coloree',
                    'Topic :: Utilities',
                    'Natural Language :: English',
                    'Natural Language :: German',],
-      install_requires=['Django>=1.2', ],
+      install_requires=['Django>=1.6', ],
       zip_safe=False,
       )

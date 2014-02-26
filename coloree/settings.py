@@ -6,7 +6,7 @@ _ = lambda s: s # don’t import settings!
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-TIME_ZONE = 'Europe/Zurich'
+TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'de'
 LANGUAGES = (('de', _(u'German')),
              ('en', _(u'English')),

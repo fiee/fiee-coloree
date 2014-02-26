@@ -18,12 +18,12 @@ class ColorPickerWidget(forms.TextInput):
         extend = True
         css = {
             'all': (
-                settings.MEDIA_URL + 'colorpicker/colorPicker.css',
+                settings.STATIC_URL + 'colorpicker/colorPicker.css',
             )
         }
         js = (
             #'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js',
-            settings.MEDIA_URL + 'colorpicker/jquery.colorPicker.js',
+            settings.STATIC_URL + 'colorpicker/jquery.colorPicker.js',
         )
 
     def __init__(self, language=None, attrs=None):
