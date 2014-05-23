@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(name='fiee-coloree',
-      version='0.1.1',
+      version='0.1.2',
       description=u'',
       keywords='color picker widget RGB CMYK conversion',
       author='Henning Hraban Ramm',
