@@ -7,21 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fiëé colorée\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-07 10:42+0200\n"
-"PO-Revision-Date: 2011-10-07 10:45+0100\n"
+"POT-Creation-Date: 2014-05-28 11:11+0600\n"
+"PO-Revision-Date: 2014-05-28 11:12+0600\n"
 "Last-Translator: Henning Hraban Ramm <hraban@fiee.net>\n"
 "Language-Team: fiëé visuëlle <hraban@fiee.net>\n"
-"Language: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.6.4\n"
 
-#: __init__.py:6
-#: __init__.py:7
+#: __init__.py:6 __init__.py:7
 msgid "fiëé colorée"
 msgstr "fiëé colorée"
 
@@ -33,14 +31,20 @@ msgstr "Deutsch"
 msgid "English"
 msgstr "Englisch"
 
-#: validators.py:11
-msgid "This is an invalid color code. It must be a html hex color code e.g. #000000"
-msgstr "Dieser Farbcode ist ungültig. Zulässig sind nur hexadezimale HTML-Farbcodes, z.B. #000000"
+#: validators.py:13
+msgid ""
+"This is an invalid color code. It must be a html hex color code e.g. #000000"
+msgstr ""
+"Dieser Farbcode ist ungültig. Zulässig sind nur hexadezimale HTML-Farbcodes, "
+"z.B. #000000"
 
-#: validators.py:25
-#: validators.py:28
-msgid "This is not a valid CMYK color code. Please use percent values e.g. 0,100,100,0"
-msgstr "Dieser Farbcode ist ungültig. Bitte geben Sie CMYK-Prozentwerte ein, z.B. 0,100,100,0"
+#: validators.py:27 validators.py:30
+msgid ""
+"This is not a valid CMYK color code. Please use percent values e.g. "
+"0,100,100,0"
+msgstr ""
+"Dieser Farbcode ist ungültig. Bitte geben Sie CMYK-Prozentwerte ein, z.B. "
+"0,100,100,0"
 
 #~ msgid "This is not a valid year (between 1900 and 2100)."
 #~ msgstr "Das ist kein gültiges Jahr (zwischen 1900 und 2100)."
