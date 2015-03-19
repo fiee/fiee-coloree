@@ -5,17 +5,18 @@ from django.conf import settings
 from django.utils.safestring import mark_safe
 from tools import assert_on_exception
 
+
 class ColorPickerWidget(forms.TextInput):
     """
     Simple HTML RGB color input using jquery.colorPicker
-    
+
     see also
     http://djangosnippets.org/snippets/1261/
     http://laktek.com/2008/10/27/really-simple-color-picker-in-jquery/
     http://github.com/laktek/really-simple-color-picker
     """
-    input_type = 'color' # HTML 5, Opera only
-    
+    input_type = 'color'  # HTML 5, Opera only
+
     class Media:
         extend = True
         css = {
@@ -24,7 +25,7 @@ class ColorPickerWidget(forms.TextInput):
             )
         }
         js = (
-            #'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js',
+            # 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js',
             settings.STATIC_URL + 'colorpicker/jquery.colorPicker.js',
         )
 
