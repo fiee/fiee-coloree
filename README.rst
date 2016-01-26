@@ -11,14 +11,13 @@ What and how
 Dependencies
 ------------
 
-* Django 1.6 with included contributions
+* Django 1.6+ with included contributions
 * widgets use jQuery_ and jquery.colorPicker
 
 
 Known Issues
 ------------
 
-* No tests
 * No docs
 * No color management
 
