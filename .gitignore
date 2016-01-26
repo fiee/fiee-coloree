@@ -22,3 +22,4 @@ dist
 migrations/
 .project
 .pydevproject
+.AppleDouble
