@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import re
@@ -15,7 +14,7 @@ def is_html_color_code(field_data):
                 '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$', field_data):
             raise ValidationError(_(
                 'This is an invalid color code. It must be a html hex color code e.g. #000000'))
-    except (TypeError, ValueError), e:
+    except (TypeError, ValueError) as e:
         raise ValidationError(e)
     return True
 
@@ -32,10 +31,10 @@ def is_cmyk_color_code(field_data):
                 or not re.match('^(\d{1,3},){3}\d{1,3}$', field_data):
             raise ValidationError(_(
                 'This is not a valid CMYK color code. Please use percent values e.g. 0,100,100,0'))
-        parts = map(lambda x: int(x), parts)
+        parts = tuple(map(lambda x: int(x), parts))
         if max(parts) > 100 or min(parts) < 0:
             raise ValidationError(_(
                 'This is not a valid CMYK color code. Please use percent values e.g. 0,100,100,0'))
-    except (TypeError, ValueError), e:
+    except (TypeError, ValueError) as e:
         raise ValidationError(e)
     return True

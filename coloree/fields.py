@@ -1,9 +1,10 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from __future__ import absolute_import
 from django.db import models
 from django.forms import fields
-from validators import is_html_color_code
-from widgets import ColorPickerWidget
+from coloree.validators import is_html_color_code
+from coloree.widgets import ColorPickerWidget
 
 
 class HtmlColorCodeField(models.CharField):

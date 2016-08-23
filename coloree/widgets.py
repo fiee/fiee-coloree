@@ -1,9 +1,10 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import absolute_import
+from __future__ import unicode_literals
 from django import forms
 from django.conf import settings
 from django.utils.safestring import mark_safe
-from tools import assert_on_exception
+from coloree.tools import assert_on_exception
 
 
 class ColorPickerWidget(forms.TextInput):
@@ -36,7 +37,7 @@ class ColorPickerWidget(forms.TextInput):
     @assert_on_exception
     def render(self, name, value, attrs=None):
         rendered = super(ColorPickerWidget, self).render(name, value, attrs)
-        return rendered + mark_safe(u'''<script type="text/javascript">
+        return rendered + mark_safe('''<script type="text/javascript">
             $(function() {
             $('#id_%s').colorPicker();
             });

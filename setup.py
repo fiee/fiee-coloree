@@ -1,10 +1,11 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
+from __future__ import absolute_import
+from __future__ import unicode_literals
 from setuptools import setup, find_packages
 
 setup(name='fiee-coloree',
-      version='0.2.0',
-      description=u'',
+      version='0.2.1',
+      description='color conversion tools',
       keywords='color picker widget RGB CMYK conversion',
       author='Henning Hraban Ramm',
       author_email='hraban@fiee.net',

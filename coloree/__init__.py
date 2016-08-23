@@ -1,8 +1,8 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+from __future__ import absolute_import
 from django.utils.translation import ugettext_lazy as _
-from validators import is_cmyk_color_code
+from coloree.validators import is_cmyk_color_code
 
 verbose_name = _('fiëé colorée')
 verbose_name_plural = _('fiëé colorée')
@@ -76,7 +76,7 @@ def CMYK_to_RGB(cmyk):
 
     if max(c+k, m+k, y+k) > 100:
         k = 100 - max(c, m, y)
-    return [(1 - (x+k)/100)*255 for x in (c, m, y)]
+    return [int((1 - (x+k)/100)*255) for x in (c, m, y)]
 
 
 def CMYK_to_HtmlColorCode(cmyk):
