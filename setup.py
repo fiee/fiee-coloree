@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from __future__ import absolute_import
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 from setuptools import setup, find_packages
 
 setup(name='fiee-coloree',
@@ -15,6 +15,7 @@ setup(name='fiee-coloree',
       package_dir={'coloree': 'coloree',},
       packages=find_packages(),
       include_package_data = True,
+      # fails with unicode_literals
       package_data = {'': [
             '*.rst',
             'locale/*/LC_MESSAGES/*.*',
